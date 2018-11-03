@@ -41,4 +41,4 @@ Set all the same int Amazon Lightsail:
 1. Select your instance
 2. Go to  `networking`
 3. Set to following:
-[ ](demo/demo.png)
+![ ](demo/demo.png)
