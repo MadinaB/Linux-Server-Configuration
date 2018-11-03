@@ -6,6 +6,17 @@ This is an [Amazon Lightsail](https://lightsail.aws.amazon.com) implementation o
 
 You can access the project at [http://52.79.156.71.xip.io/](http://52.79.156.71.xip.io/)
 
+## Information for grader
+
+* website: http://52.79.156.71.xip.io/
+* public ip: 52.79.156.71
+* port: 2200
+* user: grader
+* password: grader
+* key file: `provided within submission`
+
+* Example connection:
+`ssh  -i [path to key file]  grader@52.79.156.71 -p 2200`
 
 ## Create new `grader` user and assign sudo permissions
 
@@ -17,7 +28,7 @@ You can access the project at [http://52.79.156.71.xip.io/](http://52.79.156.71.
 
 *  Create `.ssh` directory for grader. `sudo mkdir /home/grader/.ssh` , copy content from `sudo vi /home/ubuntu/.ssh/authorized_keys` into `sudo vi /home/grader/.ssh/authorized_keys`
 
-* Try to login via `ssh -i [keyFilename] grader@[ip-of-your-machine]"`
+* Try to login via `ssh  -i [path to key file] grader@[ip-of-the-machine]"`
 
 
 ## Setting required firewall configurations
@@ -32,7 +43,7 @@ You can access the project at [http://52.79.156.71.xip.io/](http://52.79.156.71.
 3. Set to following:
 ![ ](demo/demo.png)
 
-* Check you have set that right via new ssh connection `ssh  -i [key]  grader@[lightsail-ip] -p 2200`
+* Check you have set that right via new ssh connection `ssh  -i [path to key file] grader@[ip-of-the-machine] -p 2200`
 
 * Update configurations to defaults via `sudo ufw default deny incoming`  and `sudo ufw default allow outgoing`
 
